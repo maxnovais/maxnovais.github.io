@@ -10,7 +10,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Flapy Control - Black Edition</title>
+    <title>Flapy Control - Material Design</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -21,6 +21,7 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/default.css" rel="stylesheet">
+    <script src="assets/js/top-bar.js"></script>
 
 
 
@@ -35,7 +36,7 @@
 
 <body>
 
-    <div class="navbar navbar-fixed-top navbar-inverse">
+    <div id="box" class="navbar navbar-fixed-top navbar-default">
         <div class="navbar-header">
             <a class="navbar-brand" href="javascript:void(0)" id="menu-toggle">
                 <span class="mdi-navigation-more-vert"></span>
@@ -88,6 +89,14 @@
                 <span class="mdi-action-settings-power"></span>
                 Sair
             </a>
+            <p>
+                Mudar Cor<br>
+                <button type="button" class="btn btn-danger" onclick="button_click('#f44336');">R</button>
+                <button type="button" class="btn btn-success" onclick="button_click('#0f9d58');">G</button>
+                <button type="button" class="btn btn-primary" onclick="button_click('#4285f4');">B</button>
+            </p>
+
+
         </div>
         <!-- /#sidebar-wrapper -->
 
@@ -135,6 +144,7 @@
 
     <!-- Menu Toggle Script -->
     <script src="assets/js/menu-toggle.js"></script>
+
 
 </body>
 

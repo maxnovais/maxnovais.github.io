@@ -2,6 +2,10 @@ body{
       padding-top: 50px;
 }
 
+.btn-blue{
+    color: blue;
+}
+
 .btn-menu{
     width: 99%;
     text-align: left;
