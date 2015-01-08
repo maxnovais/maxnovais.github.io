@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     margin: 0px;
+    background: #ECEFF1;
+    color: #263238;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -14,6 +16,8 @@ h1,h2,h3,h4,h5,h6 {
     margin-right: 1em;
     position: relative;
 
+    height: 120px;
+
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -23,109 +27,113 @@ h1,h2,h3,h4,h5,h6 {
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
 }
 
+.header{
+    text-align: center;
+    background-color: #78909C;
+    margin: 0px;
+    padding: 0px;
 
-@media(min-width:768px) {
-    .navbar-default {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-default .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-default.navbar-shrink {
-        padding: 0px 0;
-    }
-
-    .navbar-default.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
 
 }
 
-.navbar-default .navbar-nav>li>a {
-    font-weight: 600;
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+
+.navbar{
+    background-color: #607D8B;
+    border-bottom: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    border-radius: 0%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-width: 0 0px 0px 0px;
+    padding: 1em;
+    font-size: 1.2em;
+    z-index: 1;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
+}
+
+.navbar-shrink{
+    background-color: #607D8B;
+    position: fixed;
+    border-bottom: 0px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    border-radius: 0%;
+    width: 100%;
+    margin-top: 0px;
+    padding: 0.3em;
+    border-width: 0 0px 0px 0px;
+    font-size: 1em;
+    opacity: .7;
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+    color: #B0BEC5;
+    text-shadow: 1px 1px #263238;
+}
+
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-nav>li>a:focus{
     color: #ECEFF1;
+    text-shadow: 1px 1px #263238;
+    font-weight: 800;
+
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
-    font-weight: 600;
-    color: #607D8B;
-    background-color: #B0BEC5;
-    -webkit-border-radius: 30%;
-    -moz-border-radius: 30%;
-    border-radius: 30%;
+.site-title{
+    margin: 0px;
+    padding: 0.5em;
 }
 
-.navbar-shrink .navbar-nav>li>a:hover {
-    -webkit-border-radius: 3%;
-    -moz-border-radius: 3%;
-    border-radius: 3%;
-}
-
-.navbar a:focus {
-    outline: 0;
-}
-
-.navbar .navbar-nav li a:focus {
-    outline: 0;
-}
-
-.navbar-default,
-.navbar-inverse {
-    border: 0;
-}
-
-.navbar-shrink{
+.site-title-shrink{
     position: fixed;
-    top:0px;
-    left:0px;
-    width: 100%;
-    visibility: visible;
+    float: left;
+    text-align: left;
+    margin-top: -2px;
+    margin-left: 5em;
+    z-index: 1;
 }
 
-.navbar{
-    text-transform: uppercase;
-    margin-bottom: 0px;
-    background-color: #607D8B;
-    border-radius: 0;
+.header-shrink{
+    text-align: left;
+
 }
 
-.navbar-brand{
-    visibility: hidden;
-}   
+.avatar-shrink{
+    position: fixed;
+    height: 65px;
+    float: left;
+    text-align: left;
+    margin-top: 0.5em;
+    margin-left: 3em;
+    z-index: 2;
+}
 
-.navbar-brand-visible{
-    visibility: visible;
-}   
+.content{
+    height: 900px;
+    padding-top: 1em;
+    z-index: 0;
+}
 
-.header{
-    padding-bottom: 1em;
-    height: 15em;
-    background-color: #aaa;
+.post-data{
     text-align: center;
-    background: -webkit-linear-gradient(#B0BEC5, #607D8B); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#B0BEC5, #607D8B); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#B0BEC5, #607D8B); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#B0BEC5, #607D8B); /* Standard syntax */
 }
 
-.header-text{
-    color: #ECEFF1;
-}
-
-
-#content{
-    padding-top: 3em;
-    border: 1px solid #000;
-    height: 300%;
+.post-line{
+    margin-top: 1em;
+    margin-bottom: 1em;
 }

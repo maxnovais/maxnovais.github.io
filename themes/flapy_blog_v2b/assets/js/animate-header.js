@@ -2,10 +2,14 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 200) {
-        $(".navbar-brand").addClass("navbar-brand-visible")
+        $(".avatar").addClass("avatar-shrink")
+        $(".header").addClass("header-shrink")
+        $(".site-title").addClass("site-title-shrink")
         $(".navbar-default").addClass("navbar-shrink");
     } else {
-        $(".navbar-brand").removeClass("navbar-brand-visible")
+        $(".avatar").removeClass("avatar-shrink")
+        $(".header").removeClass("header-shrink")
+        $(".site-title").removeClass("site-title-shrink")
         $(".navbar-default").removeClass("navbar-shrink");
     }
 });
