@@ -140,3 +140,13 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+.fix-bar{
+    height: 3em;
+    width: 100%;
+}
+
+.fix-bar-shrink{
+    height: 14em;
+    width: 100%;
+}
