@@ -26,10 +26,6 @@ h1,h2,h3,h4,h5,h6 {
     -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
     box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
-
 }
 
 .header{
@@ -39,6 +35,13 @@ h1,h2,h3,h4,h5,h6 {
     padding: 0px;
     height: 14em;
     width: 100%;
+    position: fixed;
+
+    z-index: 2;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    transition: all 1s;
 }
 
 .header-shrink{
@@ -66,7 +69,10 @@ h1,h2,h3,h4,h5,h6 {
     border-width: 0 0px 0px 0px;
     padding: 1em;
     font-size: 1.2em;
+    position: fixed;
+    margin-top: 11.6em;
     z-index: 1;
+
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     transition: all 1s;
@@ -103,9 +109,7 @@ h1,h2,h3,h4,h5,h6 {
 .site-title{
     margin: 0px;
     padding: 0.5em;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    transition: all 1s;
+
 }
 
 .site-title-shrink{
@@ -114,7 +118,6 @@ h1,h2,h3,h4,h5,h6 {
     text-align: left;
     margin-top: 6.5em;
     margin-left: 5em;
-    z-index: 2;
 }
 
 .avatar-shrink{
@@ -124,13 +127,11 @@ h1,h2,h3,h4,h5,h6 {
     text-align: left;
     margin-top: 14.5em;
     margin-left: 3em;
-    z-index: 2;
 }
 
 .content{
     height: 900px;
     padding-top: 1em;
-    z-index: 0;
 }
 
 .post-data{
@@ -143,12 +144,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .fix-bar{
-    height: 3em;
-    width: 100%;
-}
-
-.fix-bar-shrink{
-    height: 14em;
+    height: 20em;
     width: 100%;
 }
 
