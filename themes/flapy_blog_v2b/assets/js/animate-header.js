@@ -1,7 +1,7 @@
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 200) {
+    if (scroll >= 220) {
         $(".avatar").addClass("avatar-shrink")
         $(".header").addClass("header-shrink")
         $(".site-title").addClass("site-title-shrink")
