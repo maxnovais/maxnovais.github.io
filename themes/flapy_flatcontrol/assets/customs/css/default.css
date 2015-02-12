@@ -1,0 +1,169 @@
+/* Typograph */
+body{
+      padding-top: 60px;
+      font-size: 0.9em;
+}
+
+h1{
+    font-size: 2.4em
+}
+
+h2{
+    font-size: 2.2em
+}
+
+h3{
+    font-size: 2.0em
+}
+
+h4{
+    font-size: 1.8em
+}
+
+h5{
+    font-size: 1.6em
+}
+
+h6{
+    font-size: 1.4em
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    margin: 0.2em;
+}
+
+
+/* Button Class */
+
+.btn-menu{
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-radius: 0%;
+    background: transparent;
+    padding: .8em;
+    font-size: 1.4em;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn-menu:hover{
+    background-color: #4e5f72;
+}
+
+
+/* Nav Bar Styles */
+
+.navbar-right{
+    margin: 0px;
+}
+
+.container-fluid{
+    padding: 12px;
+    margin: 0px;
+}
+
+.current-user{
+    font-weight: 800;
+}
+
+.nav>li>a{
+    font-size: 1.4em
+}
+
+#menu-id:hover{
+    background-color: #4e5f72;
+
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#welcome:hover{
+    color: #FFF;
+}
+
+
+/* Sidebar style */
+
+#sidebar-wrapper{
+    color:#CCC;
+    text-align: center;
+}
+
+#current_user{
+    font-weight: bold;
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 180px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 180px;
+    width: 0;
+    height: 100%;
+    margin-left: -180px;
+    background-color: #2c3e50;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 180px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -180px;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 180px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 180px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
