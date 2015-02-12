@@ -1,7 +1,7 @@
 /* Typograph */
 body{
       padding-top: 60px;
-      font-size: 0.9em;
+      font-size: 1em;
 }
 
 h1{
@@ -33,6 +33,10 @@ h1,h2,h3,h4,h5,h6{
     margin: 0.2em;
 }
 
+table{
+    font-size: 1.2em
+}
+
 
 /* Button Class */
 
@@ -43,7 +47,7 @@ h1,h2,h3,h4,h5,h6{
     border-radius: 0%;
     background: transparent;
     padding: .8em;
-    font-size: 1.4em;
+    font-size: 1.2em;
 
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -72,7 +76,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .nav>li>a{
-    font-size: 1.4em
+    font-size: 1.2em
 }
 
 #menu-id:hover{
